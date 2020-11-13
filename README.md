@@ -94,7 +94,7 @@ All that remains is the implementation of presenting nicely the card in a sorted
 
 We can identify them with the help of the figure below:
 
-PICTURE
+![Alt text](Pictures/examples.png?raw=true "Examples")
 
 We have laid four possible scenarios:
 
