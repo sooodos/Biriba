@@ -70,19 +70,19 @@ We explained in a higher level what the computer’s course of action is, which 
 #### 13 Different 10-card groups
 
 
-2 to Jack
-3 to Queen
-4 to King
-5 to Ace
-6 to 2
-7 to 3
-8 to 4
-9 to 5
-10 to 6
-Jack to 7
-Queen to 8
-King to 9
-Ace to 10
+- 2 to Jack
+- 3 to Queen
+- 4 to King
+- 5 to Ace
+- 6 to 2
+- 7 to 3
+- 8 to 4
+- 9 to 5
+- 10 to 6
+- Jack to 7
+- Queen to 8
+- King to 9
+- Ace to 10
  
 
 We find how many cards exist in each of these thirteen different groups and return the biggest one. That way, when we switch cards, we will only switch when we find a newCard AND an existing card, that when switched, they achieve a bigger count than that of the last best 10-card group.
@@ -98,10 +98,11 @@ We can identify them with the help of the figure below:
 
 We have laid four possible scenarios:
 
-The computer possesses 10 consecutive cards from 8 to 4.
-The computer possesses 9 cards from the range of Q to 8 and it misses 3 to complete 10 cards. (We have one Joker)
-The computer possesses 8 cards either from the range of J to 7 or from the range of Q to 8. (We have two Jokers)
-The computer possesses 10 consecutive cards from 2 to J.
+- The computer possesses 10 consecutive cards from 8 to 4.
+- The computer possesses 9 cards from the range of Q to 8 and it misses 3 to complete 10 cards. (We have one Joker)
+- The computer possesses 8 cards either from the range of J to 7 or from the range of Q to 8. (We have two Jokers)
+- The computer possesses 10 consecutive cards from 2 to J.
+
 On all four scenarios, notice that there is always a gap of three consecutive empty spaces that can never be filled. Even in the third scenario, whatever our choice is for the value of the second Joker, the gap remains. After this finding, our logic is simple.
 
 Iterate through the corresponding Stats column until you find that gap. When you find it, declare the first position to be the position immediately after the end of the three-square gap as the starting index in which we will start to print the Cards. This means that for our third example, our method would choose the Joker to take the value of 8. Of course, this does not interfere with the rules of the game since the Joker can be any card and we just choose a value that does not in any way obstruct certainty of victory. We construct the cards by taking the value of the index that corresponds from the Rank table, and the Suit of the best Suit for that deck. That way we correctly construct all cards. When we go to an index that the card does not exist, but that index is included in our 10-card best group, that means that we must use a Joker to depict its value.
