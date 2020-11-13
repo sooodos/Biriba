@@ -21,7 +21,7 @@ $ java PlayingBiriba
 ```
 ## Game Info
 
-This program implements a simplified version of the game card game ‘Biriba’, which is played with a human player and a computer-controlled player. The winner is the first player who manages to possess ten cards in their hand of the same suit (Clubs, Diamonds, Hearts, Spades) and of consecutive rank, that is determined in a cyclic manner.
+This program implements a simplified version of the card game ‘Biriba’, which is played with a human player and a computer-controlled player. The winner is the first player who manages to possess ten cards in their hand of the same suit (Clubs, Diamonds, Hearts, Spades) and of consecutive rank, that is determined in a cyclic manner.
 
 
 
