@@ -1,5 +1,5 @@
 /**
- * @author Sotiris Loizidis - 917309
+ * @author Sotiris Loizidis
  */
 import java.util.Scanner;
 
